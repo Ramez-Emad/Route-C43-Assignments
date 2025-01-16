@@ -4,7 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Employee[] employees = Employee.CreateEmployee(3);
+
+            Employee.InsertData(employees);
+
+            Console.Clear();
+
+            Employee.Print(employees);
+
+            Console.WriteLine("After Sorting");
+
+            Employee.SortArray(employees);
+            Employee.Print(employees);
         }
     }
 }
