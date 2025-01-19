@@ -1,12 +1,13 @@
 ﻿using Assignment_OOP4.Question_1;
+using Assignment_OOP4.Question_2;
 
 namespace Assignment_OOP4
 {
 
-    
+
     internal class Program
     {
-      
+
         static void Main(string[] args)
         {
             #region Part1
@@ -41,6 +42,36 @@ namespace Assignment_OOP4
             //Console.WriteLine("--------------------------------------");
             //Rectangle rectangle = new Rectangle { Length = 10, Width = 4 , Area = 40.0};
             //rectangle.DisplayShapeInfo();
+            #endregion
+
+            #region Q2
+
+            //BasicAuthenticationService Users = new BasicAuthenticationService();
+
+            //Users.AddUser("Ramez", "password123", "admin");
+            //Users.AddUser("Emad", "password456", "user");
+
+            //IAuthenticationService authService = Users;
+
+
+            //if (authService.AuthenticateUser("Ramez", "password123"))
+            //{
+            //    Console.WriteLine("User authenticated successfully!");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Authentication failed!");
+            //}
+
+            //if (authService.AuthorizeUser("Emad", "Admin"))
+            //{
+            //    Console.WriteLine("User authorized successfully!");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Authorization failed!");
+            //}
+
             #endregion
 
             #endregion
