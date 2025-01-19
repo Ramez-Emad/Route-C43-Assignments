@@ -1,5 +1,6 @@
 ﻿using Assignment_OOP4.Question_1;
 using Assignment_OOP4.Question_2;
+using Assignment_OOP4.Question_3;
 
 namespace Assignment_OOP4
 {
@@ -71,6 +72,19 @@ namespace Assignment_OOP4
             //{
             //    Console.WriteLine("Authorization failed!");
             //}
+
+            #endregion
+
+            #region Q3
+
+            //INotificationService emailService = new EmailNotificationService();
+            //INotificationService smsService = new SmsNotificationService();
+            //INotificationService pushService = new PushNotificationService();
+
+            //emailService.SendNotification("Ramez Emad", "Hello, this is an email notification!");
+            //smsService.SendNotification("+123456", "Hello, this is an SMS notification!");
+            //pushService.SendNotification("Ramez Emad", "Hello, this is a push notification!");
+
 
             #endregion
 
