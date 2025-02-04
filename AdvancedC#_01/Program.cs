@@ -1,5 +1,6 @@
 ﻿using System.Collections;
-namespace AdvancedC__01
+
+namespace AdvancedC__02
 {
     internal class Program
     {
