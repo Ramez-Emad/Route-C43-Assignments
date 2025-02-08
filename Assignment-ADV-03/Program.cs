@@ -59,42 +59,42 @@ namespace Assignment_ADV_03
 
                 #region ScratchExist
 
-                bool exist = numbers.ScratchExist(x => x == 5);
-                System.Console.WriteLine(exist);
+                //bool exist = numbers.ScratchExist(x => x == 5);
+                //System.Console.WriteLine(exist);
 
                 #endregion
 
                 #region ScratchFind
-                int find = numbers.ScratchFind(x => x == 5);
-                System.Console.WriteLine(find);
+                //int find = numbers.ScratchFind(x => x == 5);
+                //System.Console.WriteLine(find);
                 #endregion
 
                 #region ScratchFindAll
-                List<int> findAll = numbers.ScratchFindAll(x => x > 5);
-                foreach (var item in findAll)
-                {
-                    System.Console.WriteLine(item);
-                }
+                //List<int> findAll = numbers.ScratchFindAll(x => x > 5);
+                //foreach (var item in findAll)
+                //{
+                //    System.Console.WriteLine(item);
+                //}
                 #endregion
 
                 #region ScratchFindIndex
-                int findIndex = numbers.ScratchFindIndex(x => x == 5);
-                System.Console.WriteLine(findIndex);
+                //int findIndex = numbers.ScratchFindIndex(x => x == 5);
+                //System.Console.WriteLine(findIndex);
                 #endregion
 
                 #region ScratchFindLastIndex
-                int findLastIndex = numbers.ScratchFindLastIndex(x => x == 5);
-                System.Console.WriteLine(findLastIndex);
+                //int findLastIndex = numbers.ScratchFindLastIndex(x => x == 5);
+                //System.Console.WriteLine(findLastIndex);
                 #endregion
 
                 #region ScratchForEach
-                numbers.ScratchForEach(x => System.Console.WriteLine(x));
+                //numbers.ScratchForEach(x => System.Console.WriteLine(x));
 
                 #endregion
 
                 #region ScratchTrueForAll
-                bool trueForAll = numbers.ScratchTrueForAll(x => x > 0);
-                System.Console.WriteLine(trueForAll);
+                //bool trueForAll = numbers.ScratchTrueForAll(x => x > 0);
+                //System.Console.WriteLine(trueForAll);
                 #endregion
 
 
