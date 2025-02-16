@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment-ADV-03", "Assignment-ADV-03\Assignment-ADV-03.csproj", "{1EB15276-0809-43DD-A37F-1DE583AC68F0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADV_Assignment04", "ADV_Assignment04\ADV_Assignment04.csproj", "{586A5098-67B2-4FFD-B0F0-423904FE8922}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ01", "LINQ01\LINQ01.csproj", "{DB02FC44-D533-4636-AE3E-8E0A40F7D4E8}"
 EndProject
 Global
@@ -15,14 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1EB15276-0809-43DD-A37F-1DE583AC68F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1EB15276-0809-43DD-A37F-1DE583AC68F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1EB15276-0809-43DD-A37F-1DE583AC68F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1EB15276-0809-43DD-A37F-1DE583AC68F0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{586A5098-67B2-4FFD-B0F0-423904FE8922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{586A5098-67B2-4FFD-B0F0-423904FE8922}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{586A5098-67B2-4FFD-B0F0-423904FE8922}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{586A5098-67B2-4FFD-B0F0-423904FE8922}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DB02FC44-D533-4636-AE3E-8E0A40F7D4E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DB02FC44-D533-4636-AE3E-8E0A40F7D4E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB02FC44-D533-4636-AE3E-8E0A40F7D4E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
