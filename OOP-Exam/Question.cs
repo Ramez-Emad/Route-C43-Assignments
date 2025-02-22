@@ -40,7 +40,7 @@ namespace OOP_Exam
                 Console.Write("Please Enter Your Answer : ");
             } while (!int.TryParse(Console.ReadLine(), out In) | In < 0 | In > NumberOfChoices);
             
-            return In == CorrectAnswer?.Id ? Mark : 0;
+            return Answers[In-1].CompareTo(CorrectAnswer) == 0 ? Mark : 0;
         }
 
         protected void GetBodyAndMarkFromUser()

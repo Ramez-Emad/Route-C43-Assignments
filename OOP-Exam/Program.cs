@@ -17,12 +17,9 @@ namespace OOP_Exam
                 Stopwatch sw = new ();
                 sw.Start();
                 Sub01.SubjectExam.ShowExam();
-
+                sw.Stop();
                 Console.WriteLine($"The ELapsed Time is :  {sw.Elapsed}");
             }
-
-
-
         }
     }
 }

@@ -43,11 +43,7 @@ namespace OOP_Exam
                 Console.Write("Please Specify The Right Choice Of Question : ");
             } while (!int.TryParse(Console.ReadLine(), out InCorrect) | InCorrect < 1 | InCorrect > NumberOfChoices);
 
-            CorrectAnswer = new Answer()
-            {
-                Id = Answers[InCorrect - 1].Id,
-                Text = Answers[InCorrect - 1].Text
-            };
+            CorrectAnswer = (Answer)Answers[InCorrect - 1].Clone();
         }
     }
 }

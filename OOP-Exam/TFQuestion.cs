@@ -29,7 +29,7 @@ namespace OOP_Exam
                 Console.WriteLine("Please Enter The Right Answer Of Question ( 1 for True and 2 for False) : ");
 
             } while (!int.TryParse(Console.ReadLine(), out InCorrect) | InCorrect < 1 | InCorrect > 2);
-            CorrectAnswer = Answers[InCorrect - 1];
+            CorrectAnswer =  (Answer) Answers[InCorrect - 1].Clone();
         }
     }
 }
