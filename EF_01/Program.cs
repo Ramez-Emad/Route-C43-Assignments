@@ -6,7 +6,7 @@ namespace EF_01
     {
         static void Main(string[] args)
         {
-           using ITIDbContext db = new ITIDbContext();
+           using ITIDbContext db = new ITIDbContext(); 
         }
     }
 }
