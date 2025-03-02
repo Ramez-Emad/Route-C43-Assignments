@@ -7,53 +7,73 @@ namespace EF_02
     {
         static void Main(string[] args)
         {
-            using ITIDbContext dbContext = new ITIDbContext();
-
-            // Insert a new record
-
-            Topic topic01 = new Topic
+            try
             {
-                Name = "Entity Framework"
-            };
+                using ITIDbContext dbContext = new ITIDbContext();
 
-            Topic topic02 = new Topic
+                // Insert new records safely
+                var topic01 = new Topic()
+                { 
+                    Name = "Entity Framework"
+                };
+
+                var topic02 = new Topic()
+                {
+                    Name = "LINQ"
+                };
+
+                dbContext.Add(topic01);
+                dbContext.Add(topic02);
+                dbContext.SaveChanges();
+                Console.WriteLine("Topics inserted successfully.");
+
+                //---------------------
+                // Select a record safely
+
+                var topic = dbContext.Topic.FirstOrDefault(t => t.Id == 1);
+                if (topic != null)
+                {
+                    Console.WriteLine($"Selected Topic: {topic.Name}");
+                }
+                else
+                {
+                    Console.WriteLine("Topic with ID 1 not found.");
+                }
+
+                //-------------------
+                // Update a record safely
+
+                var currTopic = dbContext.Topic.FirstOrDefault(t => t.Id == 1);
+                if (currTopic != null)
+                {
+                    currTopic.Name = "Entity Framework Core";
+                    dbContext.SaveChanges();
+                    Console.WriteLine("Topic updated successfully.");
+                }
+                else
+                {
+                    Console.WriteLine("Topic with ID 1 not found for update.");
+                }
+
+                //-------------------
+                // Delete a record safely
+
+                var delTopic = dbContext.Topic.FirstOrDefault(t => t.Id == 2);
+                if (delTopic != null)
+                {
+                    dbContext.Remove(delTopic);
+                    dbContext.SaveChanges();
+                    Console.WriteLine("Topic deleted successfully.");
+                }
+                else
+                {
+                    Console.WriteLine("Topic with ID 2 not found for deletion.");
+                }
+            }
+            catch (Exception ex)
             {
-                Name = "LINQ"
-            };
-
-            dbContext.Add(topic01);
-            dbContext.Add(topic02);
-            // State of the entity is Added
-
-            dbContext.SaveChanges();
-
-
-            //---------------------
-            // Select a record
-
-            Topic topic = dbContext.Topic.Find(1);
-            Console.WriteLine(topic.Name);
-
-            //-------------------
-
-            // Update a record
-
-            Topic Currtopic = dbContext.Topic.Find(1);
-            Currtopic.Name = "Entity Framework Core";
-
-            // State of the entity is Modified
-
-            //-------------------
-
-            // Delete a record
-
-            Topic Deltopic = dbContext.Topic.Find(2);
-            dbContext.Remove(Deltopic);
-
-            dbContext.SaveChanges();
-
-
-
+                Console.WriteLine($"An error occurred: {ex.Message}");
+            }
         }
     }
 }
